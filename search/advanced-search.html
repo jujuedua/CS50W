@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+         <nav>
+                <ul>
+                    <li><a class="homepage" href="index.html"> CS50ogle</a></li>
+                </ul>
+            </nav>
+            <h2>Advanced Search</h2>
+            <hr class="divider">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                    <form action="https://google.com/search">
+                        <label for="all_words">all these words:</label>
+                    </td>
+                <td> <input class="text" type="text" input type="hidden" name="as_q" id="all_words"></td>
+                <td>
+                    <p class="word">Type the important words: <code>tri-colour rat terrier</code></p>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                    <form action="https://google.com/search">
+                        <label for="exact_words">this exact word or phrase:</label>
+                    </td>
+                <td> <input class="text" type="text" input type="hidden" name="as_epq" id="exact_words"></td>
+                <td>
+                    <p class="word">Put exact words in quotes: <code>"rat terrier"</code></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <form action="https://google.com/search">
+                        <label for="any_words">any of these words:</label>
+                    </td>
+                <td> <input class="text" type="text" input type="hidden" name="as_oq" id="any_words"></td>
+                <td>
+                    <p class="word">Type OR between all the words you want: <code>miniature OR standard</code></p>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                    <form action="https://google.com/search">
+                        <label for="none_words">none of these words:</label>
+                </td>
+                <td> <input class="text" type="text" input type="hidden" name="as_eq" id="none_words"></td>
+                <td>
+                    <p class="word">Put a minus sign just before words that you don't want: <code>-rodent, -"Jack Russell"</code></p>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="https://google.com/search">
+            <input type="submit" value="Advanced Search" class="btn">
+        </form>
+</html>
